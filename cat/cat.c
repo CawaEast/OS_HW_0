@@ -2,7 +2,7 @@
 
 int main(int argc, char* argv[]) {
 	int BUFF_SIZE = 1024;
-	char* buff;
+	char buff[BUFF_SIZE];
 	ssize_t status = 1;
 	while (status > 0) {
 		status = read(0, buff, BUFF_SIZE);
